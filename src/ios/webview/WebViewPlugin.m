@@ -30,7 +30,7 @@
     @try {
       dispatch_async(dispatch_get_main_queue(), ^{
           webViewController = [[WebViewController alloc] init];
-          webViewController.delegate = self; // esto es para poder recibir el evento de que webView se cerro
+          // webViewController.delegate = self; // esto es para poder recibir el evento de que webView se cerro
           webViewController.startPage = url;
           [self.viewController presentViewController:webViewController animated:YES completion:nil];
       });
